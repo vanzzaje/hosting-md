@@ -50,11 +50,14 @@ termux-setup-storage
 apt update && apt upgrade
 pkg install nodejs git ffmpeg libwebp imagemagick
 git clone https://github.com/zyfndev/nefftzy.git
-cd Hinata-Hyuga
+cd nefftzy
 pkg install yarn
 yarn
 npm start
 ```
+## Whm Configuration
+* [Click Here](https://github.com/zyfndev/nefftzy/blob/c917d551be67526f150734695680226584575e52/message/msg.js#L44)
+
 
 ## Edit file
 `./config.json`
