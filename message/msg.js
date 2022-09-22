@@ -819,11 +819,13 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 				})
 			    break
 //Hosting Menu
-case prefix+'createhost':
+case prefix+'createcp':
 let usern = `neff${makeid(6)}`
 let domain = q.split('|')[0] 
 let pekeg = q.split('|')[1]
 if (args.length < 2) return reply(`Kirim perintah ${command} domain|package`)
+reply("Creating please wait....")
+
 axios.get(`https://${hostwhm}:2087/json-api/createacct?api.version=1&username=${usern}&contactemail=shymex404@gmail.com&plan=${pekeg}&domain=${domain}`, authWhm)
 .then(response => {     
      let np = response.data
@@ -835,58 +837,48 @@ axios.get(`https://${hostwhm}:2087/json-api/createacct?api.version=1&username=${
               dsta.toString().indexOf("+===================================+")
             ); //substr = 'word. Hello!'
             let nefft = substr.split("| Language: en")[0];
-            axios.get(`https://${hostwhm}:2087/json-api/create_user_session?api.version=1&user=${usern}&service=cpaneld&locale=en`,authWhm)
-  .then((risol) => {
-        var respe = risol.data;
-            const cpBut = [
-            { urlButton: { displayText: `Salin Informasi`, url : "https://www.whatsapp.com/otp/copy/" + nefft } },
-		    { urlButton: { displayText: `Auto Login Cpanel`, url : `${respe.data.url}` } },
-		    { urlButton: { displayText: `Whm Login`, url : `https://${hostwhm}:2087` } }
-            ]
-            conn.sendMessage(from, { caption: neff, image: cpanellogo, templateButtons: cpBut, footer: `${np.metadata.reason}`, mentions: [sender] })          
-})}
-  })
- .catch((error) => {
-     console.log('error ' + error);
-  });
+            reply(`${nefft}\n\nLogin : https://${hostwhm}:2087`)
+  }});
 break
 case prefix+'listcp':
-axios.get(`https://${hostwhm}:2087/json-api/listaccts?api.version=1`,authWhm)
+reply('Wait Getting List Account info....')
+axios.get(`https://${hostwhm}:2087/json-api/listaccts?api.version=1`, authWhm)
   .then((risol) => {
  let lisol = risol.data
-for (let i = 0; i < lisol.length; i++) {
-let ftzy= `
-─────────────────
-\`\`\`${lisol[i].user}\`\`\` 
-*▢ Maxsub* : ${lisol[i].maxsub}
-*▢ Maxsql* : ${lisol[i].maxsql}
-*▢ Startdate* : ${lisol[i].startdate}
-*▢ Disklimit* : ${lisol[i].disklimit}
-*▢ Maxlst* : ${lisol[i].maxlst}
-*▢ Plan* : ${lisol[i].plan}
-*▢ Owner*: ${lisol[i].owner}
-*▢ Ip* : ${lisol[i].ip}
-*▢ Domain* : ${lisol[i].domain}
-*▢ Diskused* : ${lisol[i].diskused}
-*▢ Maxaddons* : ${lisol[i].maxaddons}
-*▢ Suspendreason* : ${lisol[i].suspendreason}
-─────────────────`
+ var ttdy = lisol.data.acct
+let ogh = `*── 「 LIST CPANEL 」 ──*\nTotal Akun : ${ttdy.length}\n`
+for (let i = 0; i < ttdy.length; i++) {
+ogh += `
+\n
+─────[\`\`\` ${ttdy[i].user} \`\`\` ]────────
+*▢ Maxsub* : ${ttdy[i].maxsub}
+*▢ Maxsql* : ${ttdy[i].maxsql}
+*▢ Startdate* : ${ttdy[i].startdate}
+*▢ Disklimit* : ${ttdy[i].disklimit}
+*▢ Maxlst* : ${ttdy[i].maxlst}
+*▢ Plan* : ${ttdy[i].plan}
+*▢ Owner*: ${ttdy[i].owner}
+*▢ Ip* : ${ttdy[i].ip}
+*▢ Domain* : ${ttdy[i].domain}
+*▢ Diskused* : ${ttdy[i].diskused}
+*▢ Maxaddons* : ${ttdy[i].maxaddons}
+*▢ Suspendreason* : ${ttdy[i].suspendreason}
+─────────────────\n\n`
 }
-reply(ftzy)
+reply(ogh)
 })
 				break
 case prefix+'terminate':
 if (args.length < 2) return reply(`Kirim perintah ${command} username`)
+reply('Wait Terminating Account....')
 axios
     .get(
-      `https://${host}:2087/json-api/removeacct?api.version=1&username=${args[1]}`,
-      
-    )
+      `https://${hostwhm}:2087/json-api/removeacct?api.version=1&username=${args[1]}`, authWhm )
     .then((e) => {
       if ([1, "1"].includes(e.data?.metadata?.result))
-        m.reply(`Done User ${args[1]} Telah di Terminate`);
+      reply(`Done User ${args[1]} Telah di Terminate`);
       else {
-        reply(e.data.reason);
+        reply(e.metadata);
         console.log(e.data);
       }
     })

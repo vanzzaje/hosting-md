@@ -24,6 +24,7 @@ let session = `./${setting.sessionName}.json`
 const { state, saveState } = useSingleFileAuthState(session)
 let welcome = JSON.parse(fs.readFileSync('./database/welcome.json'));
 
+
 function title() {
       console.clear()
 	  console.log(chalk.bold.green(figlet.textSync('Nefftzy', {
@@ -33,7 +34,7 @@ function title() {
 		width: 80,
 		whitespaceBreak: false
 	})))
-	console.log(chalk.yellow(`\n                        ${chalk.yellow('[ Created By Ditzzy ]')}\n\n${chalk.red('Nefftzy Bot')} : ${chalk.white('WhatsApp Bot Multi Device')}\n${chalk.red('Follow Insta Dev')} : ${chalk.white('@zyfn.dev')}\n${chalk.red('Message Me On WhatsApp')} : ${chalk.white('628988293493')}\n${chalk.red('Donate')} : ${chalk.white('08988293493 ( Dana )')}\n`))
+	console.log(chalk.yellow(`\n         ${chalk.yellow('[ Created By Ditzzy ]')}\n\n${chalk.red('Nefftzy Bot')} : ${chalk.white('WhatsApp Bot Multi Device')}\n${chalk.red('Follow Insta Dev')} : ${chalk.white('@zyfn.dev')}\n${chalk.red('Message Me On WhatsApp')} : ${chalk.white('628988293493')}\n${chalk.red('Donate')} : ${chalk.white('08988293493 ( Dana )')}\n`))
 }
 
 /**
