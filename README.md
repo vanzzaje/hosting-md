@@ -63,7 +63,7 @@ npm start
   "ownerNumber": ["628988293493@s.whatsapp.net"],
   "ownerName": ["Ditzzy"],
   "botName": "Nefftzy",
-  "website": "https://neff.zoldyck.us",
+  "website": "https://zoldyck.us",
   "donasiDana": "08988293493",
   "donasiGopay": "08988293493",
   "sessionName": "session",
