@@ -7,21 +7,21 @@
 <a href="#"><img title="NEFFTZY" src="https://img.shields.io/badge/-NEFFTZY-blueviolet"></a>
 </p>
 <p align="center">
-<a href="https://github.com/zyfndev/followers"><img title="Followers" src="https://img.shields.io/github/followers/zyfndev?color=red&style=flat-square"></a>
-<a href="https://github.com/zyfndev/nefftzy/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/zyfndev/nefftzy?color=blue&style=flat-square"></a>
-<a href="https://github.com/zyfndev/nefftzy/network/members"><img title="Forks" src="https://img.shields.io/github/forks/zyfndev/nefftzy?color=red&style=flat-square"></a>
-<a href="https://github.com/zyfndev/nefftzy/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/zyfndev/nefftzy?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/zyfndev/nefftzy"><img title="Open Source" src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
-<a href="https://github.com/zyfndev/nefftzy/"><img title="Size" src="https://img.shields.io/github/repo-size/zyfndev/nefftzy?style=flat-square&color=green"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/zyfndev/nefftzy/&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="https://github.com/zyfndev/nefftzy/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/wffzy/followers"><img title="Followers" src="https://img.shields.io/github/followers/wffzy?color=red&style=flat-square"></a>
+<a href="https://github.com/wffzy/nefftzy/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/wffzy/nefftzy?color=blue&style=flat-square"></a>
+<a href="https://github.com/wffzy/nefftzy/network/members"><img title="Forks" src="https://img.shields.io/github/forks/wffzy/nefftzy?color=red&style=flat-square"></a>
+<a href="https://github.com/wffzy/nefftzy/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/wffzy/nefftzy?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/wffzy/nefftzy"><img title="Open Source" src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
+<a href="https://github.com/wffzy/nefftzy/"><img title="Size" src="https://img.shields.io/github/repo-size/wffzy/nefftzy?style=flat-square&color=green"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/wffzy/nefftzy/&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://github.com/wffzy/nefftzy/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 
 <p align="center">
-  <a href="https://github.com/zyfndev/nefftzy#requirements">Requirements</a> •
-  <a href="https://github.com/zyfndev/nefftzy#instalasi">Installation</a> •
-  <a href="https://github.com/zyfndev/nefftzy#thanks-to">Thanks to</a> •
-  <a href="https://github.com/zyfndev/nefftzy#donate">Donate</a>
+  <a href="https://github.com/wffzy/nefftzy#requirements">Requirements</a> •
+  <a href="https://github.com/wffzy/nefftzy#instalasi">Installation</a> •
+  <a href="https://github.com/wffzy/nefftzy#thanks-to">Thanks to</a> •
+  <a href="https://github.com/wffzy/nefftzy#donate">Donate</a>
 </p>
 </div>
 
@@ -49,8 +49,8 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 termux-setup-storage
 apt update && apt upgrade
 pkg install nodejs git ffmpeg libwebp imagemagick
-git clone https://github.com/zyfndev/nefftzy.git
-cd Hinata-Hyuga
+git clone https://github.com/wffzy/nefftzy.git
+cd nefftzy
 pkg install yarn
 yarn
 npm start
