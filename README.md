@@ -58,6 +58,7 @@ npm start
 
 ## Edit file
 `./config.json`
+* [Whm Info](https://github.com/wffzy/nefftzy/blob/ec9a6764eb2bd7108fe2717c10cf8a27578c6c14/message/msg.js#L44)
 ```ts
 {
   "ownerNumber": ["628988293493@s.whatsapp.net"],
