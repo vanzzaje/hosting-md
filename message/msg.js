@@ -820,8 +820,8 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 			    break
 //Hosting Menu
 case prefix+'createcp':
-let usern = `neff${makeid(6)}`
-let domain = q.split('|')[0] 
+let domain = q.split('|')[0]
+let usern = domain.replace(/[^\w\s]/gi, "");
 let pekeg = q.split('|')[1]
 if (args.length < 2) return reply(`Kirim perintah ${command} domain|package`)
 reply("Creating please wait....")
